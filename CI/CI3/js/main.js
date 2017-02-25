@@ -1,7 +1,8 @@
 var Nakama = {};
 Nakama.configs = {
-  bulletSpeed : 1000,
+  bulletSpeed : 500,
   shipSpeed   : 500,
+  enemySpawnCooldown : 3
 
 };
 
@@ -74,15 +75,9 @@ var create = function(){
 
   Nakama.enemies = [];
 
-  Nakama.enemies.push(
-    new EnemyType3Controller(540, 100,{
-      minX      : 100,
-      maxX      : 540,
-      tweenTime : 5,
-      health    : 10,
-      cooldown  : 1
-    })
-  );
+
+  Nakama.timeSinceLastSpawn = 2.25;
+
 
 }
 
@@ -93,7 +88,19 @@ var update = function(){
     Nakama.players[i].update();
   }
   Nakama.timeSinceLastSpawn += Nakama.game.time.physicsElapsed;
-  
+ if(Nakama.enemies.length < 3 && Nakama.timeSinceLastSpawn > Nakama.configs.enemySpawnCooldown){
+   Nakama.enemies.push(new EnemyController(100, 100, "EnemyType1.png",
+     {
+       cooldown  : 0.5,
+       minX      : 100,
+       maxX      : 540,
+       tweenTime : 3,
+       health    : 3
+     }));
+   Nakama.timeSinceLastSpawn = 0;
+ }
+
+
   for(var i=0;i<Nakama.enemies.length;i++){
     Nakama.enemies[i].update();
   }
