@@ -16,18 +16,20 @@ span:hover {
     cursor: pointer;
 }
 .menu_vertical {
-    background-color: #D5B0AC;
+    
     color: #402E2A;
     font-weight: bold;
     text-align: center;
     width: 100px;
+   
 }
 p {
     display: block;
     width: 100px;
     height: 30px;
     line-height: 200%;
-    
+    background-color: #D5B0AC;
+    margin: 1px;
 }
 p:hover {
     background-color: #9CD08F;
