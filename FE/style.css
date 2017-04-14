@@ -1,0 +1,141 @@
+.menu_horizontal {
+    background-color: #D5B0AC;
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+#menu_vertical1 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    top: 32px;
+    display: none;
+}
+#item1:hover #menu_vertical1 {
+    display: block;
+}
+#menu_vertical1_1 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    bottom: 0px;
+    display: none;
+}
+#item1_1:hover #menu_vertical1_1 {
+    display: block;
+}
+#menu_vertical1_2 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 31px;
+    display: none;
+}
+#item1_2:hover #menu_vertical1_2 {
+    display: block;
+}
+#menu_vertical1_3 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 62px;
+    display: none;
+}
+#item1_3:hover #menu_vertical1_3 {
+    display: block;
+}
+#menu_vertical1_4 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 93px;
+    display: none;
+}
+#item1_4:hover #menu_vertical1_4 {
+    display: block;
+}
+#menu_vertical1_1_1 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    display: none;
+}
+#item1_1_1:hover #menu_vertical1_1_1 {
+    display: block;
+}
+#menu_vertical1_1_2 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 31px;
+    display: none;
+}
+#item1_1_2:hover #menu_vertical1_1_2 {
+    display: block;
+}
+#menu_vertical1_1_3 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 62px;
+    display: none;
+}
+#item1_1_3:hover #menu_vertical1_1_3 {
+    display: block;
+}
+#menu_vertical1_1_4 {
+    color: #402E2A;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 93px;
+    display: none;
+}
+#item1_1_4:hover #menu_vertical1_1_4 {
+    display: block;
+}
+
+
+span {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 200%;
+    background-color: #D5B0AC;
+    margin: 0px 0px 1px 0px;
+}
+span:hover {
+    background-color: #9CD08F;
+    color: #FFFFFF;
+    cursor: pointer;
+}
